@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --light-grey: #f5f5f7;
+  --dark-grey: #333333;
+  --blue-grey: #636363;
+  --primary-color: #007aff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.main-text {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--blue-grey);
+}
+
+.main-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.message-label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: var(--dark-grey);
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e5e7;
+  background-color: #f9f9f9;
+  color: var(--dark-grey);
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0051a8;
+}
+
+#result {
+  font-size: 1.5rem;
+  color: var(--blue-grey);
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .message-label {
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 1.2rem;
   }
 }
