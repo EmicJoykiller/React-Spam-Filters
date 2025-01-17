@@ -1,3 +1,23 @@
+Spam Filter Using Regular Expressions
+
+This project is a web application built with React that allows users to check if their messages might be flagged as spam. It utilizes the power of regular expressions (Regex) to scan messages for patterns commonly associated with spam, such as requests for money, offers of free rewards, or suspicious phrases. The app features a clean, modern UI with responsive design, ensuring a seamless experience across different devices, including desktops, tablets, and mobile phones.
+
+Upon entering a message, users can instantly see whether it matches any predefined spam patterns. The application uses a set of regular expressions to detect suspicious keywords or phrases, such as "free money," "please help," or "dear friend." If a message matches any of these patterns, it is flagged as spam; otherwise, it is considered safe.
+
+The project not only demonstrates the practical use of regular expressions for real-world problem-solving but also highlights best practices in web development, including responsive design, interactive forms, and state management using React.
+
+Key Features:
+
+Spam detection using powerful regular expressions.
+Responsive design for optimal display on all screen sizes.
+Interactive user interface with instant feedback on message status.
+Modern design with clean typography and smooth interactions.
+Technologies Used:
+
+Frontend: React, JavaScript (ES6+), HTML5, CSS3.
+Core Logic: Regular Expressions (Regex).
+This project is perfect for anyone looking to understand the practical applications of Regex while appreciating good UI/UX design principles.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
